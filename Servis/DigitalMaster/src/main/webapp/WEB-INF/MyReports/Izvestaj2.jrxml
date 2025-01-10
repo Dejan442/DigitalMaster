@@ -1,0 +1,110 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Izvestaj2" language="java" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a86e06a3-48b5-4fa8-8a32-a13d371d8bc4">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Transparent" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Transparent" forecolor="#B89F7D" backcolor="#70A9C6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Transparent" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<dataset name="tableDataset" uuid="36d4962f-0d0c-4ed1-8157-5f4bbba6d3f7">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<query language="sql"><![CDATA[]]></query>
+	</dataset>
+	<dataset name="Dataset1" uuid="4314e979-599d-417b-ab58-67ddd88c0e2a">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<query language="sql"><![CDATA[]]></query>
+	</dataset>
+	<query language="sql"><![CDATA[]]></query>
+	<title height="70" splitType="Stretch">
+		<element kind="image" uuid="22cd99c0-4c66-4f46-91f6-8c6bf79265b3" x="275" y="0" width="300" height="64">
+			<expression><![CDATA["leaf_banner_red.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="c650873e-f5ba-448b-aadc-56458cf851aa" x="0" y="13" width="263" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[Leaf Red Title]]></text>
+		</element>
+		<element kind="staticText" uuid="f64cc5c9-a3a6-478b-a526-2f2227cf7122" x="117" y="46" width="157" height="22" style="SubTitle">
+			<text><![CDATA[Leaf Red SubTitle]]></text>
+		</element>
+	</title>
+	<pageFooter height="20" splitType="Stretch">
+		<element kind="textField" uuid="8ae1e619-5258-4650-bbaa-d6d09b24aa3b" x="433" y="0" width="80" height="20" fontSize="10.0" bold="false" hTextAlign="Right" style="Column header">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="2048e4ca-cc4c-4707-aa9e-061f836f08e6" x="513" y="0" width="40" height="20" fontSize="10.0" evaluationTime="Report" bold="false" style="Column header">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="d74f0593-032f-405a-87e1-20e3d818ef4e" x="0" y="0" width="197" height="20" fontSize="10.0" pattern="EEEEE dd MMMMM yyyy" bold="false" style="Column header">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="200" splitType="Stretch">
+		<element kind="component" uuid="e54acc5a-e9ec-49ad-9d54-70726cafde79" x="0" y="0" width="555" height="200">
+			<component kind="table">
+				<datasetRun uuid="b739b0a9-cec5-4ff6-ad5a-8e783acad8f0" subDataset="tableDataset">
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				</datasetRun>
+				<column kind="single" uuid="e3359381-38b6-43f6-8cfe-a790471194ed" width="160">
+					<tableHeader height="30" style="Table_TH">
+						<element kind="textField" uuid="32b02a3a-ab57-482d-a5a6-6cfc71fbc25a" x="0" y="0" width="160" height="30" forecolor="#CC0000" bold="true" style="SubTitle">
+							<expression><![CDATA["Header"]]></expression>
+						</element>
+					</tableHeader>
+					<tableFooter height="30" style="Table_TH"/>
+					<columnHeader height="30" style="Table_CH">
+						<element kind="staticText" uuid="1cba37a7-c039-4c0c-8a14-946e0ad19264" key="" x="0" y="0" width="160" height="30" forecolor="#727272" fontName="Arial" fontSize="16.0" bold="true" style="SubTitle">
+							<text><![CDATA[]]></text>
+							<box leftPadding="2" style="SubTitle"/>
+						</element>
+					</columnHeader>
+					<columnFooter height="30" style="Table_CH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="0625ac6d-9598-4616-8b47-2d08f5281eb6" x="0" y="0" width="160" height="30" fontName="Arial" fontSize="12.0" style="Detail">
+							<expression><![CDATA[""]]></expression>
+							<box leftPadding="2" style="Detail"/>
+						</element>
+					</detailCell>
+				</column>
+			</component>
+			<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+			<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+			<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+		</element>
+		<property name="local_mesure_unitheight" value="pixel"/>
+	</summary>
+</jasperReport>

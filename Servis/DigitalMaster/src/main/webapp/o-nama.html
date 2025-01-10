@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istorijat Firme</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1e1e2f;
+            color: white;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #cc0000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe6e6;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            background-image: url('pc.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .history-text {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
+            animation: slideUp 2s ease-out forwards;
+            transform: translateY(100%);
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background-color: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div><strong>DIGITAL-MASTER</strong></div>
+        <nav>
+            <ul>
+                <li><a href="Usluge.html">Usluge</a></li>
+                <li><a href="prodaja.html">Prodaja</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                                <li><a href="PosaljiMail">Pošalji nam mail</a><li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="history-text">
+            <h1>Istorijat Firme</h1>
+            <p>
+                Naša firma, osnovana 2005. godine, postala je sinonim za pouzdanost i kvalitet u oblasti servisiranja i prodaje računara. 
+                Počevši kao mali tim entuzijasta, razvili smo se u kompaniju koja danas pruža kompletna IT rešenja. 
+                Specijalizovani smo za servisiranje hardvera i prodaju računara vrhunskog kvaliteta, kao i za kreiranje raznovrsnih softverskih proizvoda 
+                prilagođenih potrebama korisnika.
+            </p>
+            <p>
+                Naš tim čine stručni inženjeri sa višegodišnjim iskustvom u oblasti informacionih tehnologija. 
+                Posvećeni smo unapređenju usluga i inovacijama kako bismo ostali lideri na tržištu. 
+                Bilo da vam je potreban softver po meri, optimizacija poslovanja ili podrška u IT infrastrukturi, naša firma je tu da vam pomogne.
+            </p>
+            <p>
+                Hvala vam što ste deo naše priče. Radujemo se budućim izazovima i prilikama za saradnju.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Istorijat Firme. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

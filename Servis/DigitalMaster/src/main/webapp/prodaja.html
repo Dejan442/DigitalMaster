@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1e1e2f;
+            color: white;
+        }
+
+        header {
+            background-color: #cc0000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe6e6;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .grid-item {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item img {
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .grid-item img:active {
+            transform: scale(1.1);
+        }
+
+        .grid-item h2 {
+            color: #cc0000;
+            margin-top: 10px;
+        }
+
+        .grid-item p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .grid-item input[type="radio"] {
+            margin-top: 10px;
+        }
+
+        .order-button {
+            margin-top: 20px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .order-button:hover {
+            background-color: #a00000;
+        }
+
+        footer {
+            background-color: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div><strong>DIGITAL-MASTER</strong></div>
+        <nav>
+            <ul>
+                <li><a href="Usluge.html">Usluge</a></li>
+                <li><a href="prodaja.html">Prodaja</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                                <li><a href="PosaljiMail">Pošalji nam mail</a><li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <form action="prod" method="post">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="racunar1.jpg" alt="Slika 1">
+                <h2>GAMING RIG</h2>
+                <p>RAM=16gb </p>
+               <p> procesor=Raizen 5</p>
+               <p> Graficka:Nvidia Gf1610</p>
+                <input type="radio" name="item" value="GamingRig">
+            </div>
+            <div class="grid-item">
+                <img src="racunar2.jpg" alt="Slika 2">
+               
+               
+               <h2>ULTRA TOWER</h2>
+                <p>RAM:12gb </p>
+               <p> procesor:Intel i5</p>
+               <p> Graficka:Nvidia GTX2610</p>
+                <input type="radio" name="item" value="UltraTower">
+            </div>
+            <div class="grid-item">
+                <img src="racunar3.jpg" alt="Slika 3">
+               
+                <h2>BATTLE STATION</h2>
+                <p>RAM:16gb </p>
+               <p> procesor:Intel i7</p>
+               <p> Graficka:Nvidia GTX2610</p>
+               
+               
+               
+                <input type="radio" name="item" value="BattleStation">
+            </div>
+            <div class="grid-item">
+                <img src="racunar4.jpg" alt="Slika 4">
+               
+               
+               
+               <h2>WORK HORSE PC</h2>
+                <p>RAM:32gb </p>
+               <p> procesor:Intel i7</p>
+               <p> Graficka:Nvidia GTX3610</p>
+               
+               
+               
+                <input type="radio" name="item" value="WorkHorsePc">
+            </div>
+            <div class="grid-item">
+                <img src="laptop3.jpg" alt="Slika 5">
+                
+                  <h2>ThinkPad T470</h2>
+                <p>RAM:8gb </p>
+               <p> procesor:Intel i5</p>
+               <p> Graficka:Intel</p>
+                
+                                
+              
+                
+                <input type="radio" name="item" value="ThinkPad">
+            </div>
+            <div class="grid-item">
+                <img src="laptop4.jpg" alt="Slika 6">
+                
+                <h2>Acer Extensa 15</h2>
+                <p>RAM:8gb </p>
+               <p> procesor:Intel Celeron g1610</p>
+               <p> Graficka:Intel</p>                
+                
+                <input type="radio" name="item" value="AcerExtensa15">
+            </div>
+            <div class="grid-item">
+                <img src="laptop1.jpg" alt="Slika 7">
+                
+                
+                
+            <h2>IdealPad</h2>
+                <p>RAM:9gb </p>
+               <p> procesor:Intel i3</p>
+               <p> Graficka:Nvidia GTX1610</p>
+                
+                
+                
+                <input type="radio" name="item" value="IdealPad">
+            </div>
+            <div class="grid-item">
+                <img src="laptop2.jpg" alt="Slika 8">
+                
+                
+           
+                
+                  <h2>Acer Predator</h2>
+                <p>RAM:32gb </p>
+               <p> procesor:Intel i7</p>
+               <p> Graficka:Nvidia GTX3610</p>
+                
+                <input type="radio" name="item" value="AcerPredator">
+            </div>
+        </div>
+        
+        <button class="order-button">Poruči</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Galerija. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

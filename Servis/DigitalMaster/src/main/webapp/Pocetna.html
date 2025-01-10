@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servis i Prodaja Računara</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1e1e2f;
+            color: white;
+        }
+
+        header {
+            background-color: #cc0000; /* Potamnjen crveni ton */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe6e6;
+        }
+
+        main {
+            padding: 0; /* Uklonjena margina */
+            margin: 0; /* Uklonjena margina */
+            text-align: center;
+            position: relative;
+            background-image: url('pc.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Osigurava da slika pokrije celu visinu ekrana */
+        }
+
+        main h1 {
+            color: #cc0000; /* Potamnjen crveni ton */
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Uklonjen intenzivan crni ton */
+            padding: 20px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #cc0000; /* Potamnjen crveni ton */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Zamenjeno fixed sa relative */
+            width: 100%;
+        }
+
+        footer img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        
+         .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .velicina{ 
+            font-size:500px; 
+            
+            
+            }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: "Brush Script MT", cursive, sans-serif;
+            font-size: 4rem;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
+            animation: glamAnimation 2s infinite;
+        }
+
+        @keyframes glamAnimation {
+            0%, 100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.7);
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 100px rgba(255, 215, 0, 0.8);
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+            
+            
+            
+            }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div><strong>DIGITAL-MASTER</strong></div>
+        <nav>
+            <ul>
+                <li><a href="Usluge.html">Usluge</a></li>
+                <li><a href="prodaja.html">Prodaja</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="PosaljiMail">Pošalji nam mail</a><li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="velicina">
+           <div class="overlay-text" >Digital Master</div>
+       </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Servis i Prodaja Računara. Sva prava zadržana.</p>
+      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greška u unosu</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Animacija za rotirajući tekst */
+        .rotating-text {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            animation: rotateText 3s infinite linear;
+        }
+
+        @keyframes rotateText {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Pozadina sa slikama */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('pc.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.8;
+            filter: blur(5px);
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        /* Stilizacija za okvir oko teksta */
+        .error-message {
+            position: relative;
+            padding: 20px 40px;
+            border: 5px solid #ff4757;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+        }
+
+        .error-message h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #ff4757;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Animacija za pozadinske boje i efekte */
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+            50% {
+                background: linear-gradient(to left, #2e8b57, #3a9e77);
+            }
+            100% {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+        }
+
+        /* Animacija za efekte na pozadini */
+        body {
+            animation: gradientAnimation 5s ease infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slojevi pozadine -->
+    <div class="background"></div>
+    <div class="background-overlay"></div>
+
+    <!-- Okvir sa rotirajućim tekstom -->
+    <div class="error-message">
+        <div class="rotating-text">
+            Greška u unosu
+        </div>
+    </div>
+
+</body>
+</html>

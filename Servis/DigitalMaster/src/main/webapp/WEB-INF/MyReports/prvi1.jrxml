@@ -1,0 +1,187 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="prvi1" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e15d519-eab3-497d-b483-a5c1caac3ee0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<dataset name="Dataset1" uuid="e77119ee-4451-4a53-b27a-2917274a4bdd">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+		<query language="SQL"><![CDATA[ select * from kontakt1 ]]></query>
+		<field name="Ime" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="Ime"/>
+			<property name="com.jaspersoft.studio.field.label" value="Ime"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="kontakt1"/>
+		</field>
+		<field name="Prezime" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="Prezime"/>
+			<property name="com.jaspersoft.studio.field.label" value="Prezime"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="kontakt1"/>
+		</field>
+		<field name="Email" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="Email"/>
+			<property name="com.jaspersoft.studio.field.label" value="Email"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="kontakt1"/>
+		</field>
+		<field name="Komentar" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="Komentar"/>
+			<property name="com.jaspersoft.studio.field.label" value="Komentar"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="kontakt1"/>
+		</field>
+		<group name="Ime">
+			<expression><![CDATA[$F{Ime}]]></expression>
+		</group>
+		<group name="Prezime">
+			<expression><![CDATA[$F{Prezime}]]></expression>
+		</group>
+		<group name="Email">
+			<expression><![CDATA[$F{Email}]]></expression>
+		</group>
+		<group name="Komentar">
+			<expression><![CDATA[$F{Komentar}]]></expression>
+		</group>
+	</dataset>
+	<query language="SQL"><![CDATA[ select * from "prodaja "]]></query>
+	<background splitType="Stretch"/>
+	<title height="70" splitType="Stretch">
+		<element kind="image" uuid="ea5ad761-92e5-4024-9d51-efba4363bb54" x="275" y="0" width="300" height="64">
+			<expression><![CDATA["leaf_banner_red.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="91f5fe7f-a65f-46a3-81ae-30f2d82c45a2" x="0" y="13" width="263" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[Intervencije]]></text>
+		</element>
+		<element kind="staticText" uuid="6931f6fc-c9e8-4cc3-9eec-607a123c87f7" x="117" y="46" width="157" height="22" style="SubTitle">
+			<text><![CDATA[Leaf Red SubTitle]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="36" splitType="Stretch">
+		<element kind="line" uuid="2c4ebb21-8745-45a1-a9ad-477acaac72cb" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<element kind="line" uuid="ffde0804-90e8-496b-86fb-ee363619f187" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1">
+				<pen lineWidth="0.5" lineColor="#999999"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="232" splitType="Stretch">
+		<element kind="line" uuid="30093aa1-3dd7-4eea-9cc9-e183637af8f4" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+		<element kind="component" uuid="c34d9474-9a30-4570-a449-aa43fb46bc20" x="10" y="4" width="200" height="228">
+			<component kind="table">
+				<datasetRun uuid="fa970a1e-baec-4ba2-b4a9-9d8fdcc30b50" subDataset="Dataset1">
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				</datasetRun>
+				<column kind="single" uuid="fdcbdc72-f881-4d2e-8428-8a947d3b06f5" width="50">
+					<tableHeader height="30" style="Table_TH"/>
+					<tableFooter height="30" style="Table_TH"/>
+					<columnHeader height="30" style="Table_CH">
+						<element kind="staticText" uuid="8c74b0e0-0c94-4419-bdfd-685c51f0ff63" x="0" y="0" width="50" height="30">
+							<text><![CDATA[Ime]]></text>
+						</element>
+					</columnHeader>
+					<columnFooter height="30" style="Table_CH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="772dc3f9-e1b9-4676-8195-210313cc296a" x="0" y="0" width="50" height="30">
+							<expression><![CDATA[$F{Ime}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="d4a85aab-b975-45f5-98f6-5e257abb138b" width="50">
+					<tableHeader height="30" style="Table_TH"/>
+					<tableFooter height="30" style="Table_TH"/>
+					<columnHeader height="30" style="Table_CH">
+						<element kind="staticText" uuid="e094ddde-479a-4ea6-9fe9-8751ef1eeed4" x="0" y="0" width="50" height="30">
+							<text><![CDATA[Prezime]]></text>
+						</element>
+					</columnHeader>
+					<columnFooter height="30" style="Table_CH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="0a0caec2-700f-4227-93bf-d02cf43d17e0" x="0" y="0" width="50" height="30">
+							<expression><![CDATA[$F{Prezime}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="bb3372b5-281b-4e79-a38c-8675631f2ef3" width="50">
+					<tableHeader height="30" style="Table_TH"/>
+					<tableFooter height="30" style="Table_TH"/>
+					<columnHeader height="30" style="Table_CH">
+						<element kind="staticText" uuid="a6a06d71-63c8-4011-a546-e2096d741884" x="0" y="0" width="50" height="30">
+							<text><![CDATA[Email]]></text>
+						</element>
+					</columnHeader>
+					<columnFooter height="30" style="Table_CH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="c7621d60-cd83-4c6f-aade-808b573816e8" x="0" y="0" width="50" height="30">
+							<expression><![CDATA[$F{Email}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="5d4e00fe-5b21-4c34-b1d5-006ae3c5d17c" width="50">
+					<tableHeader height="30" style="Table_TH"/>
+					<tableFooter height="30" style="Table_TH"/>
+					<columnHeader height="30" style="Table_CH">
+						<element kind="staticText" uuid="0935a8e0-fdc6-4d03-a017-09606aa716d3" x="0" y="0" width="50" height="30">
+							<text><![CDATA[Komentar]]></text>
+						</element>
+					</columnHeader>
+					<columnFooter height="30" style="Table_CH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="6072486f-1622-4f28-b3e5-0d898029d967" x="0" y="0" width="50" height="30">
+							<expression><![CDATA[$F{Komentar}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+			</component>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+			<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+			<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+		</element>
+	</columnFooter>
+	<pageFooter height="20" splitType="Stretch">
+		<element kind="textField" uuid="c9e9a989-76ae-4c92-a08c-dba3c3185f04" x="433" y="0" width="80" height="20" fontSize="10.0" bold="false" hTextAlign="Right" style="Column header">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="736cac2d-8f9a-48bb-b4e7-09302ce0e313" x="513" y="0" width="40" height="20" fontSize="10.0" evaluationTime="Report" bold="false" style="Column header">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="c49bc611-71b3-4860-8112-76288860b48d" x="0" y="0" width="197" height="20" fontSize="10.0" pattern="EEEEE dd MMMMM yyyy" bold="false" style="Column header">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>
